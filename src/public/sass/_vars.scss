@@ -1,0 +1,19 @@
+// Fonts:
+$font-default: 'Rubik', sans-serif;
+
+// Backgrounds:
+$body-background: linear-gradient(90deg, #F1A10A 0%, #342303 100%);
+$header-background: #2D2D2D;
+
+//Colors
+
+$default-white: #FFFFFF;
+$title-color: #F1A10A;
+
+
+// Mixins
+@mixin title-medium($fontSize: 2rem) {
+  font-size: $fontSize;
+  font-weight: 700;
+  color: $title-color;
+}

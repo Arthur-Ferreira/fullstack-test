@@ -1,0 +1,63 @@
+@use './vars';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: vars.$body-background;
+  font-family: vars.$font-default
+}
+
+h3 {
+  @include vars.title-medium;
+  padding: .8rem 0;
+}
+
+article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: vars.$default-white;
+}
+
+i {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 2.5rem;
+}
+
+#header {
+  background: vars.$header-background;
+  color: vars.$default-white;
+  height: 5rem;
+
+  .container {
+    width: 80%;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    #logo {
+      font-weight: 700;
+      font-size: 2.25rem;
+    }
+
+    .navigation {
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        font-weight: 500;
+      }
+    }
+
+  }
+
+}

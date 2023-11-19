@@ -19,9 +19,20 @@
 .content_small .small_subtitle .subtitle_author {
   font-size: 1.25rem;
 }
+@media (min-width: 1440px) {
+  .content_small .small_subtitle .subtitle_author {
+    font-size: 1rem;
+  }
+}
 .content_small .small_subtitle .subtitle_article {
   font-size: 1.5rem;
   line-height: 2.1rem;
+}
+@media (min-width: 1440px) {
+  .content_small .small_subtitle .subtitle_article {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  }
 }
 
 .test {

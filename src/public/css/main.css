@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -14,6 +15,11 @@ h3 {
   font-weight: 700;
   color: #F1A10A;
   padding: 0.8rem 0;
+}
+@media (min-width: 1440px) {
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 article {
@@ -34,6 +40,28 @@ i {
   color: #FFFFFF;
   height: 5rem;
 }
+#header #logo {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+#header button {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+#header button:hover, #header button:active {
+  text-decoration: underline;
+}
+#header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#header a:hover, #header a:active {
+  text-decoration: underline;
+}
 #header .container {
   width: 80%;
   height: 100%;
@@ -43,23 +71,12 @@ i {
   align-items: center;
   justify-content: space-between;
 }
-#header .container #logo {
-  font-weight: 700;
-  font-size: 2.25rem;
-}
 #header .container .navigation ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 2.5rem;
   font-weight: 500;
-}
-#header .container .navigation a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-#header .container .navigation a:hover, #header .container .navigation a:active {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

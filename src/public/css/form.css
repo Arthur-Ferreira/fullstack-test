@@ -1,13 +1,28 @@
-section {
-  margin: 5rem auto 0;
-  background: #FFFFFF;
-  padding: 4rem;
-  max-width: 450px;
-  position: relative;
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(45, 45, 45, 0.5);
+  z-index: 1;
+  display: none;
+}
+#background.open {
+  display: block;
 }
 
-form h3 {
-  text-align: center;
+#form_section {
+  position: absolute;
+  width: 28rem;
+  top: 10%;
+  left: 40%;
+  background: #FFFFFF;
+  z-index: 2;
+  display: none;
+}
+#form_section.open {
+  display: block;
 }
 
 #submit {
@@ -38,7 +53,18 @@ form h3 {
   right: 2.5rem;
 }
 
-label, input, textarea {
+.form_content {
+  padding: 4rem;
+  position: relative;
+}
+
+form h3 {
+  text-align: center;
+}
+
+label,
+input,
+textarea {
   display: block;
   width: 100%;
 }

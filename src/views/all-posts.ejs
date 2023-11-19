@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/css/main.css">
+  
+  <%- include('./includes/head') %>
   <link rel="stylesheet" href="/css/content.css">
+  <link rel="stylesheet" href="/css/form.css">
+  <script src="/scripts/open_form.js" defer></script>
   <title>Rockr Blog</title>
 </head>
 
 <body>
-  <header id="header">
-    <div class="container">
-      <h1 id="logo">Rockr Blog</h1>
-      <nav class="navigation">
-        <ul>
-          <li>
-            <a href="/post">
-              Posts
-            </a>
-          </li>
-          <a href="/contact">
-            <li>Contact</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+  <%- include('./includes/header') %>
+  <%- include('./includes/contact') %>
   <main id="content">
     <section class="content_small">
       <article>

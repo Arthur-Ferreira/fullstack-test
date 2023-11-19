@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #F1A10A 0%, #342303 100%);
+  font-family: "Rubik", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F1A10A;
+  padding: 0.8rem 0;
+}
+
+article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+i {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 2.5rem;
+}
+
+#header {
+  background: #2D2D2D;
+  color: #FFFFFF;
+  height: 5rem;
+}
+#header .container {
+  width: 80%;
+  height: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .container #logo {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+#header .container .navigation ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-weight: 500;
+}
+#header .container .navigation a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#header .container .navigation a:hover, #header .container .navigation a:active {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -4,13 +4,20 @@
   "description": "You should see this challenge as an opportunity to create an app following modern development best practices (given your platform of choice), but also feel free to use your own app architecture preferences (coding standards, code organization, third-party libraries, etc). It’s perfectly fine to use vanilla or any framework or librarie.",
   "main": "app.js",
   "scripts": {
-    "sass": "sass --watch src/public/sass:build/styles",
+    "dev": "nodemon",
+    "sass": "sass --watch src/public/sass:src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Arthur Ferreira",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
     "sass": "^1.69.5"
   }
 }

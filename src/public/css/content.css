@@ -1,0 +1,60 @@
+#content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 60px 0;
+}
+.content_small img {
+  max-height: 320px;
+}
+.content_small .small_subtitle {
+  padding: 0 5rem;
+}
+.content_small .small_subtitle .subtitle_author {
+  font-size: 1.25rem;
+}
+.content_small .small_subtitle .subtitle_article {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+}
+
+.test {
+  height: fit-content;
+  height: 100%;
+}
+.test img {
+  height: 100%;
+}
+
+.content_big {
+  max-width: 1280px;
+}
+.content_big img {
+  max-height: 640px;
+}
+.content_big .big_subtitle {
+  padding: 163px 80px;
+}
+.content_big .big_subtitle .big_author {
+  font-size: 1.25rem;
+}
+.content_big .big_subtitle .big_article {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+/*# sourceMappingURL=content.css.map */

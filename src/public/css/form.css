@@ -1,0 +1,60 @@
+section {
+  margin: 5rem auto 0;
+  background: #FFFFFF;
+  padding: 4rem;
+  max-width: 450px;
+  position: relative;
+}
+
+form h3 {
+  text-align: center;
+}
+
+#submit {
+  margin: 3rem auto 0;
+  text-align: center;
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+#submit:hover, #submit:active {
+  background-color: #e29709;
+}
+
+#close {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+}
+
+input {
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0 1.5rem;
+  height: 2.5rem;
+}
+
+textarea {
+  margin: 0.5rem 0 1.5rem;
+  resize: vertical;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=form.css.map */

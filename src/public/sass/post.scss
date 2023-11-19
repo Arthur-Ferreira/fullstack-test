@@ -1,0 +1,43 @@
+@use './vars';
+
+#post {
+  width: fit-content;
+  max-width: 920px;
+  margin: 5rem auto 0;
+  background: vars.$default-white;
+
+  article {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      padding: 150px 0;
+      white-space-collapse: preserve-breaks;
+    }
+  }
+}
+
+.post_info {
+  display: flex;
+  align-items: center;
+
+  img,
+  .post_subtitle {
+    width: 50%;
+  }
+
+
+  .post_subtitle {
+    padding: 0 60px;
+
+    time {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    
+    span {
+      font-size: 24px;
+    }
+  }
+}

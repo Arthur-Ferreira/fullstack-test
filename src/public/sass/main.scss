@@ -56,6 +56,16 @@ i {
         gap: 2.5rem;
         font-weight: 500;
       }
+
+      a {
+        color: vars.$default-white;
+        text-decoration: none;
+        
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
     }
 
   }

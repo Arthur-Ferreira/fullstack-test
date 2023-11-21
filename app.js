@@ -1,34 +1,24 @@
-require('dotenv').config()
+require('dotenv').config();
+
+const blogRoutes = require('./backend/routes/blog_routes');
 const express = require('express');
 
-const path = require('path');
+
 const app = express();
 
 const PORT = process.env.PORT
-const URI = process.env.URI
+const HOST = process.env.HOST
 
 
-
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'src', 'views'));
-
-
-app.use(express.static(path.join(__dirname, 'src', 'public')));
+// app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, 'src', 'views'));
 
 
+// app.use(express.static(path.join(__dirname, 'src', 'public')));
 
-app.get('/', function(req, res) {
-  res.redirect('/all-post');
-})
-
-app.get('/all-post', function(req, res) {
-  res.render('all-posts');
-})
-
-app.get('/contact', function(req, res) {
-  res.render('contact');
-})
+app.use('/api/posts', blogRoutes);
 
 app.listen(PORT, function() {
-  console.log(`Server runing at: ${URI}:${PORT}`)
+  console.log(`Server runing at: ${HOST}:${PORT}`)
 });
+

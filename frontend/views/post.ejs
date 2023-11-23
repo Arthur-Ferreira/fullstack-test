@@ -2,7 +2,7 @@
 <html lang="en">
 
 <%- include('./includes/head') %>
-<link rel="stylesheet" href="/css/post.css">
+
 </head>
 
 <body>
@@ -13,26 +13,13 @@
         <div class="post_info">
           <img src="https://source.unsplash.com/640x640/?rock-concert" alt="">
           <div class="post_subtitle">
-            <time datetime="">Jan 6, 2018</time>
-            <span>Kelsi Monahan</span>
-            <h3>Qui occaecati vero et quibusdam non</h3>
+            <time datetime=""><%- post.date %></time>
+            <span><%- post.author %></span>
+            <h3><%- post.title %></h3>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ligula in nulla vulputate pharetra.
-          Proin condimentum, libero quis feugiat pharetra, ante arcu faucibus felis, vel elementum magna felis in
-          libero. Aliquam id ultricies purus. Etiam at ullamcorper enim. Cras vel elit ac lorem condimentum dignissim.
-          Ut rhoncus neque finibus erat congue, id tempus lacus hendrerit. Curabitur non faucibus diam. Sed id ante id
-          dolor euismod varius eu vel velit.
-
-          Maecenas id ligula quis enim blandit gravida a et lorem. Vivamus eu turpis eu leo malesuada dictum non ac
-          tortor. Pellentesque volutpat mollis leo tincidunt sollicitudin. Suspendisse porta imperdiet sapien nec
-          euismod. Quisque ac dictum sem. Cras in porttitor lacus, vitae convallis elit. Maecenas in fermentum erat, a
-          rutrum nulla.
-
-          Mauris quis dolor sit amet metus mollis tempor eu quis turpis. Vestibulum vel eleifend magna, eget tempor
-          nulla. Donec bibendum mauris aliquam elit vulputate, id vestibulum lorem sodales. Nullam eget erat mauris.
-          Etiam sit amet sollicitudin magna. Ut tortor nisi, mollis viverra tempus consequat, interdum non mi. Quisque
-          bibendum, lacus sit amet rhoncus malesuada.
+        <p>
+          <%- post.content %>
         </p>
       </article>
     </section>

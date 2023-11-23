@@ -12,8 +12,9 @@ $title-color: #F1A10A;
 
 
 // Mixins
-@mixin title-medium($fontSize: 2rem) {
+@mixin title-medium($fontSize: 1.8rem) {
   font-size: $fontSize;
   font-weight: 700;
   color: $title-color;
+  line-height: 2rem;
 }

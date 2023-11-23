@@ -9,7 +9,7 @@ const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   // Entry file
-  mode: 'production',
+  mode: 'development',
   entry: './frontend/index.js',
   devServer: {
     open: true,
@@ -18,6 +18,7 @@ module.exports = {
     },
     port: 3030,
   },
+  
   // Output file
   output: {
     filename: '[name].bundle.js',
@@ -26,7 +27,7 @@ module.exports = {
   },
 
   optimization: {
-    minimize: false,
+    minimize: true,
     minimizer: [
       new TerserWebpackPlugin({
         parallel: true,

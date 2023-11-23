@@ -21,18 +21,6 @@ h3 {
   }
 }
 
-article {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background-color: vars.$default-white;
-}
-
-i {
-  position: absolute;
-  right: 2.5rem;
-  bottom: 2.5rem;
-}
 
 #header {
   background: vars.$header-background;
@@ -40,8 +28,7 @@ i {
   height: 5rem;
 
   #logo {
-    font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   button {
@@ -51,6 +38,7 @@ i {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+
     &:hover,
     &:active {
       text-decoration: underline;

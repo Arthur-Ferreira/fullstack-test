@@ -51,7 +51,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './frontend/views/all-posts.ejs',
+      template: './frontend/views/index.ejs',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'post-item.html',
+      template: './frontend/views/post-item.ejs',
+      
     })
   ],
 

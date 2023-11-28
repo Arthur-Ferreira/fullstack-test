@@ -16,9 +16,9 @@
 }
 
 #form_section {
-  position: absolute;
+  position: fixed;
   width: 28rem;
-  top: 10%;
+  top: 5%;
   left: 40%;
   background: vars.$default-white;
   z-index: 2;

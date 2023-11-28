@@ -9,6 +9,7 @@ const app = express();
 
 app.use(enableCors);
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT
 const HOST = process.env.HOST
@@ -16,6 +17,6 @@ const HOST = process.env.HOST
 
 app.use(blogRoutes);
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`Server runing at: ${HOST}:${PORT}`)
 });

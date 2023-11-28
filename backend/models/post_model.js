@@ -22,10 +22,10 @@ class Post {
     const sqlQuery = `
     SELECT * FROM posts
     INNER JOIN authors ON posts.author_id = authors.author_id
-    WHERE posts.post_id = ${id}
+    WHERE posts.post_id = ?
     `;
 
-    const [post, headers] = await db.query(sqlQuery);
+    const [post, headers] = await db.query(sqlQuery, id);
     return post
   }
 }

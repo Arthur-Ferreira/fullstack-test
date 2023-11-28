@@ -14,26 +14,25 @@ async function getAllContacts(req, res, next) {
 }
 
 async function insertNewContact(req, res, next) {
-  const data = { 
-    name: req.body.name,
-    email: req.body.email,
-    phone: req.body.phone,
-    message: req.body.message,
-  };
+  const data = [
+    req.body.name,
+    req.body.email,
+    req.body.phone,
+    req.body.message,
+  ];
 
-  const contact = new Contact(data);
+  const contact = new Contact();
+  let result;
 
-  let insertedId;
   try {
-    const result = await contact.saveNewContact();
-    insertedId = result.insertedId;
+    result = await contact.saveNewContact(data);
   } catch (error) {
     console.log(error);
     next(error);
   }
 
   res.status(200)
-    .json({ contact });
+    .json({ result });
 }
 
 

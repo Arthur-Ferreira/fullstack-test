@@ -18,20 +18,24 @@ class Contact {
     return contacts;
   }
 
-  async saveNewContact() {
-    const data = [
-      this.name,
-      this.email,
-      this.phone,
-      this.message,
-    ];
-
+  async saveNewContact(data) {
     const sqlQuery = `
     INSERT INTO contacts (contact_name, contact_email, contact_phone, contact_message)
     VALUES (?)
     `;
 
-    await db.query(sqlQuery, [data],);
+    let insertedId;
+
+    const result = await db.query(sqlQuery, [data], function (err, data) {
+      if (err) {
+        // some error occured
+        console.log(err);
+      } else {
+        // successfully inserted into db
+        insertedId = result.insertedId;
+        return `Inserted row ID: ${insertedId}`;
+      }
+    });
   }
 }
 
